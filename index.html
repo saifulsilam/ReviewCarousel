@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/482da7ffa8.js" crossorigin="anonymous"></script>
+    <title>Testimonial | Reviews | Carousel</title>
+    <style>
+        .testimonial{
+            max-width: 968px;
+            margin: auto;
+        }
+        .carousel_card{
+            width: 25rem;
+            margin: 0 auto;
+            padding-top: 3rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 5rem;
+            overflow: hidden;
+            padding-bottom: 2rem;
+            background-color: antiquewhite;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .carousel_content{
+            width: 20rem;
+            margin: 0 auto;
+            
+        }
+        h3,p{
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 0.5rem;
+        }
+        #name{
+            font-size: 1.4rem;
+        }
+        #job{
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        #review{
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        #prev_btn{
+            margin-right: 2rem;
+            
+        }
+        #prev_btn,#next_btn{
+            font-size: 1.6rem;
+            color: aqua;
+            cursor: pointer;
+        }
+        #prev_btn:hover,#next_btn:hover{
+            font-size: 1.6rem;
+            color: chartreuse;
+        }
+        h2::after{
+            content: "";
+            display: block;
+            background-color: chartreuse;
+            width: 100px;
+            height: 2px;
+            margin-left: 9rem;
+            margin-top: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <testimonial class="testimonial">
+        <div class="carousel_card">
+            <h2>What Our Client Says</h2>
+            <div class="carousel_content">
+                <img id="img" src="./images/author1.png" alt="">
+                <h3 id="name">Sara Khan</h3>
+                <p id="job">ui/ux designer</p>
+                <p id="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sunt temporibus ratione quod modi cumque eos ut assumenda inventore nihil.</p>
+                <i id="prev_btn" class="fa-solid fa-angle-left"></i>
+                <i id="next_btn" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </testimonial>
+
+    <script src="./App.js"></script>
+</body>
+</html>
